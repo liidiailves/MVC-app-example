@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using static eTickets.Data.PagedResultExtensions;
 
 namespace eTickets.Controllers
 {
@@ -20,14 +21,15 @@ namespace eTickets.Controllers
 		}
 
 		[AllowAnonymous]
-		public async Task<ActionResult> Index()
+		public async Task<IActionResult> Index(int page = 1)
 		{
-			var allMovies = await _service.GetAllAsync(n => n.Cinema);
-			return View(allMovies);
+			//var allMovies = await _service.GetAllAsync(n => n.Cinema);
+			var allMovies = await _service.List(page, pageSize: 3);
+            return View(allMovies);
 		}
 
 		[AllowAnonymous]
-		public async Task<ActionResult> Filter(string searchString)
+		public async Task<IActionResult> Filter(string searchString)
 		{
 			var allMovies = await _service.GetAllAsync(n => n.Cinema);
 

@@ -266,3 +266,4 @@ C:\Users\Liidia\Desktop\KTA_2\Programmeerimine\Udemy_ASP.NET Core MVC\eTickets\b
 C:\Users\Liidia\Desktop\KTA_2\Programmeerimine\Udemy_ASP.NET Core MVC\eTickets\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Liidia\Desktop\KTA_2\Programmeerimine\Udemy_ASP.NET Core MVC\eTickets\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Liidia\Desktop\KTA_2\Programmeerimine\Udemy_ASP.NET Core MVC\eTickets\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\Liidia\Desktop\KTA_2\Programmeerimine\Udemy_ASP.NET Core MVC\eTickets\obj\Debug\net8.0\eTickets.sourcelink.json

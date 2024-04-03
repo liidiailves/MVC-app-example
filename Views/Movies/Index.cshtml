@@ -1,11 +1,11 @@
-﻿@model IEnumerable<Movie>
+﻿@model PagedResult<Movie>
 
 @{
 	ViewData["Title"] = "List of Movies";
 }
 
 <div class="row">
-	@foreach (var item in Model)
+	@foreach (var item in Model.Results)
 	{
 		<div class="col-md-4 col-xs-6 border-primary mb-3">
 			<div class="card mb-3" style="max-width: 540px;">
@@ -64,8 +64,10 @@
 		</div>
 	}
 </div>
+<vc:pager result="@Model" view-name="Default" />
 
 @await Html.PartialAsync("_CreateItem", "Movies")
+@* @(await Component.InvokeAsync<PagerViewComponent>(new { result = Model, viewName = "Default" })) *@
 
 
 

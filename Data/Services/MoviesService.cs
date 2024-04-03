@@ -63,7 +63,14 @@ namespace eTickets.Data.Services
 			return response;
 		}
 
-		public async Task UpdateMovieAsync(NewMovieVM data)
+        public async Task<PagedResult<Movie>> List(int page, int pageSize)
+        {
+            var result = await _context.Movies.GetPagedAsync(page, pageSize);
+
+            return result;
+        }
+
+        public async Task UpdateMovieAsync(NewMovieVM data)
 		{
 			var dbMovie = await _context.Movies.FirstOrDefaultAsync(n => n.Id == data.Id);
 
