@@ -46,7 +46,7 @@ namespace eTickets.Controllers
 
 		public async Task<IActionResult> AddItemToShoppingCart(int id)
 		{
-			var item = await _moviesService.GetMovieByIdAsync(id);
+			var item = await _moviesService.GetByIdAsync(id);
 
 			if(item != null) 
 			{
@@ -57,7 +57,7 @@ namespace eTickets.Controllers
 
 		public async Task<IActionResult> RemoveItemFromShoppingCart(int id)
 		{
-			var item = await _moviesService.GetMovieByIdAsync(id);
+			var item = await _moviesService.GetByIdAsync(id);
 
 			if (item != null)
 			{

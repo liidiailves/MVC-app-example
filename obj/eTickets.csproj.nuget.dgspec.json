@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Liidia\\Desktop\\KTA_2\\Programmeerimine\\Udemy_ASP.NET Core MVC\\eTickets\\eTickets.csproj": {}
+    "C:\\Users\\liidi\\Desktop\\KTA_2\\Programmeerimine\\Udemy_ASP.NET Core MVC\\eTickets\\eTickets.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Liidia\\Desktop\\KTA_2\\Programmeerimine\\Udemy_ASP.NET Core MVC\\eTickets\\eTickets.csproj": {
+    "C:\\Users\\liidi\\Desktop\\KTA_2\\Programmeerimine\\Udemy_ASP.NET Core MVC\\eTickets\\eTickets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liidia\\Desktop\\KTA_2\\Programmeerimine\\Udemy_ASP.NET Core MVC\\eTickets\\eTickets.csproj",
+        "projectUniqueName": "C:\\Users\\liidi\\Desktop\\KTA_2\\Programmeerimine\\Udemy_ASP.NET Core MVC\\eTickets\\eTickets.csproj",
         "projectName": "eTickets",
-        "projectPath": "C:\\Users\\Liidia\\Desktop\\KTA_2\\Programmeerimine\\Udemy_ASP.NET Core MVC\\eTickets\\eTickets.csproj",
-        "packagesPath": "C:\\Users\\Liidia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liidia\\Desktop\\KTA_2\\Programmeerimine\\Udemy_ASP.NET Core MVC\\eTickets\\obj\\",
+        "projectPath": "C:\\Users\\liidi\\Desktop\\KTA_2\\Programmeerimine\\Udemy_ASP.NET Core MVC\\eTickets\\eTickets.csproj",
+        "packagesPath": "C:\\Users\\liidi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\liidi\\Desktop\\KTA_2\\Programmeerimine\\Udemy_ASP.NET Core MVC\\eTickets\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Liidia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\liidi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -86,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

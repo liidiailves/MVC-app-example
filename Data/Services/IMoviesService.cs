@@ -1,15 +1,17 @@
-﻿using eTickets.Data.Base;
-using eTickets.Data.ViewModels;
+﻿using eTickets.Data.ViewModels;
 using eTickets.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace eTickets.Data.Services
 {
-	public interface IMoviesService : IEntityBaseRepository<Movie>
-	{
+    public interface IMoviesService
+    {
         Task<PagedResult<Movie>> List(int page, int pageSize);
-        Task<Movie> GetMovieByIdAsync(int id);
-		Task<NewMovieDropdownsVM> GetNewMovieDropdownsValues();
-		Task AddNewMovieAsync(NewMovieVM data);
-		Task UpdateMovieAsync(NewMovieVM data);
-	}
+        Task<Movie> GetByIdAsync(int id); 
+        Task<NewMovieDropdownsVM> GetNewMovieDropdownsValues();
+        Task AddNewMovieAsync(NewMovieVM data);
+        Task UpdateMovieAsync(NewMovieVM data);
+        Task<IEnumerable<Movie>> GetMoviesWithActorsAsync();
+    }
 }
